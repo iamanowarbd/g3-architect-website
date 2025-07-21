@@ -123,6 +123,7 @@ main > section{
 
 .facts-container{
     display: grid;
+    justify-items: center;
     grid-template-columns: repeat(4, 1fr);
 }
 
@@ -162,8 +163,14 @@ main > section{
        flex-direction : column;
     }
 
-    .team-img-container{
-        grid-template-columns: repeat(1, 1fr);
+    .team-img-container,
+    .facts-container{
+        grid-template-columns:  1fr;
+    }
+
+    .facts-container{
+        justify-items: center;
+        gap: 24px;
     }
 
     .our-features{
